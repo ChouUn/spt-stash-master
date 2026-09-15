@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 
 namespace ChouUn.StashMaster.Core.Packing;
 
-/// <summary>每个请求的排序与聚合共用树：类型为根，原生子类按成员裁剪并压缩。</summary>
+/// <summary>每个请求的排序与聚合共用树：类型为根，原生子类和末端模板按成员裁剪并压缩。</summary>
 internal sealed class PackingTree
 {
     private static readonly ConditionalWeakTable<PackRequest, PackingTree> Cache = new();
@@ -13,13 +13,14 @@ internal sealed class PackingTree
     internal sealed class Node
     {
         internal Node(int index, string key, int depth, string sortType,
-            string? categoryId, Node? parent, IReadOnlyList<PackItem> items)
+            string? categoryId, string? templateId, Node? parent, IReadOnlyList<PackItem> items)
         {
             Index = index;
             Key = key;
             Depth = depth;
             SortType = sortType;
             CategoryId = categoryId;
+            TemplateId = templateId;
             Parent = parent;
             Items = items;
         }
@@ -29,16 +30,33 @@ internal sealed class PackingTree
         internal int Depth { get; }
         internal string SortType { get; }
         internal string? CategoryId { get; }
+        internal string? TemplateId { get; }
         internal Node? Parent { get; }
         internal IReadOnlyList<PackItem> Items { get; }
     }
 
     private sealed class Branch
     {
-        internal Branch(string? categoryId) => CategoryId = categoryId;
+        internal Branch(string? categoryId, string? templateId = null)
+        {
+            CategoryId = categoryId;
+            TemplateId = templateId;
+        }
         internal string? CategoryId { get; }
+        internal string? TemplateId { get; }
         internal List<PackItem> Items { get; } = new();
-        internal Dictionary<string, Branch> Children { get; } = new(StringComparer.Ordinal);
+        internal Dictionary<(bool Template, string Id), Branch> Children { get; } = new();
+
+        internal Branch Child(string id, bool template = false)
+        {
+            var key = (Template: template, Id: id);
+            if (!Children.TryGetValue(key, out Branch? child))
+            {
+                child = template ? new Branch(null, id) : new Branch(id);
+                Children.Add(key, child);
+            }
+            return child;
+        }
     }
 
     internal static PackingTree For(PackRequest request) =>
@@ -69,15 +87,10 @@ internal sealed class PackingTree
                 // 适配层已按业务类型截断；只构建类型内部的子链，不再猜测原生边界。
                 for (int depth = 0; depth < item.SubcategoryPath.Count; depth++)
                 {
-                    string id = item.SubcategoryPath[depth];
-                    if (!branch.Children.TryGetValue(id, out Branch? child))
-                    {
-                        child = new Branch(id);
-                        branch.Children.Add(id, child);
-                    }
-                    branch = child;
+                    branch = branch.Child(item.SubcategoryPath[depth]);
                     branch.Items.Add(item);
                 }
+                branch.Child(item.TemplateId, template: true).Items.Add(item);
             }
             Add(root, null, type.Key);
         }
@@ -94,17 +107,19 @@ internal sealed class PackingTree
             {
                 int depth = parent == null ? 0 : parent.Depth + 1;
                 string key = parent == null ? "type:" + Encode(sortType)
-                    : parent.Key + "/" + Encode(branch.CategoryId!);
+                    : parent.Key + "/" + (branch.TemplateId == null
+                        ? "category:" + Encode(branch.CategoryId!)
+                        : "template:" + Encode(branch.TemplateId));
                 node = new Node(nodes.Count, key, depth, sortType,
-                    branch.CategoryId, parent, branch.Items.ToArray());
+                    branch.CategoryId, branch.TemplateId, parent, branch.Items.ToArray());
                 nodes.Add(node);
                 if (parent == null) { roots.Add(node); }
                 if (levels.Count == depth) { levels.Add(new List<Node>()); }
                 levels[depth].Add(node);
                 foreach (PackItem item in branch.Items) { paths[item.Id].Add(node); }
             }
-            foreach (Branch child in branch.Children.OrderBy(p => p.Key, StringComparer.Ordinal)
-                .Select(p => p.Value))
+            foreach (Branch child in branch.Children.OrderBy(p => p.Key.Template)
+                .ThenBy(p => p.Key.Id, StringComparer.Ordinal).Select(p => p.Value))
                 Add(child, node, sortType);
         }
     }

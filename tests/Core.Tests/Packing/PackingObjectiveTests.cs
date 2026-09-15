@@ -115,12 +115,12 @@ public sealed class PackingObjectiveTests
     {
         var request = new PackRequest(5, 10, Array.Empty<FixedBlock>(), new[]
         {
-            new PackItem("a", "a", 6, 2)
+            new PackItem("a", "same", 6, 2)
             {
                 Required = true, SortType = "Weapons",
                 SubcategoryPath = new[] { "branch", "leaf" },
             },
-            new PackItem("b", "b", 6, 2)
+            new PackItem("b", "same", 6, 2)
             {
                 Required = true, SortType = "Weapons",
                 SubcategoryPath = new[] { "branch", "leaf" },

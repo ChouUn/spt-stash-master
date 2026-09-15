@@ -41,7 +41,8 @@ public sealed class PackingTreeTests
         Assert.Equal(1, branch.Depth);
         Assert.Equal(new string?[] { null, "branch", "a" },
             tree.Paths["a"].Select(n => n.CategoryId));
-        Assert.Single(tree.Paths["direct"]);
+        Assert.Equal("same-template", tree.Paths["direct"].Last().TemplateId);
+        Assert.Equal(1, tree.Paths["direct"].Last().Depth);
         Assert.DoesNotContain(tree.Nodes, n => n.CategoryId == "common" || n.CategoryId == "wrapper");
 
         Assert.Equal(new[] { 2, 1, 0 }, CategoryPacking.Spans(request, Layout("direct", "a", "b")));
@@ -57,7 +58,7 @@ public sealed class PackingTreeTests
     }
 
     [Fact]
-    public void 空子链直接进入排序根_空排序类型只有一个未识别根()
+    public void 空子链按模板分叶_同模板压缩到排序根_空排序类型共用未识别根()
     {
         PackRequest request = Grid(
             Item("known-a", "Armor") with { TemplateId = "template-a" },
@@ -68,9 +69,53 @@ public sealed class PackingTreeTests
 
         Assert.Equal("known-a,known-b", Members(Assert.Single(tree.Roots, n => n.SortType == "Armor")));
         Assert.Equal("unknown-a,unknown-b,unknown-empty", Members(Assert.Single(tree.Roots, n => n.SortType == "")));
-        Assert.All(tree.Paths.Values, path => Assert.Single(path));
-        Assert.Equal(new[] { 6 }, CategoryPacking.Spans(request,
+        Assert.Equal(new[] { "template-a", "template-b" }, tree.Levels[1]
+            .Select(n => n.TemplateId).OrderBy(id => id));
+        Assert.All(tree.Paths.Where(p => p.Key.StartsWith("unknown-")),
+            pair => Assert.Single(pair.Value));
+        Assert.Equal(new[] { 6, 0 }, CategoryPacking.Spans(request,
             Layout("known-a", "unknown-a", "unknown-b", "known-b", "unknown-empty")));
+    }
+
+    [Theory]
+    [InlineData("")]
+    [InlineData("shared")]
+    [InlineData("template:6:shared/category:0:")]
+    public void 模板与同名原生类别不碰撞_相同模板不跨类别分支聚合(string id)
+    {
+        PackRequest request = Grid(
+            Item("direct-a", "Barter") with { TemplateId = id },
+            Item("direct-b", "Barter") with { TemplateId = id },
+            Item("nested-a", "Barter", id) with { TemplateId = id },
+            Item("nested-b", "Barter", id) with { TemplateId = id });
+        PackingTree tree = PackingTree.For(request);
+        PackingTree.Node category = Assert.Single(tree.Nodes, n => n.CategoryId == id);
+        PackingTree.Node template = Assert.Single(tree.Nodes, n => n.TemplateId == id);
+
+        Assert.Equal("nested-a,nested-b", Members(category));
+        Assert.Equal("direct-a,direct-b", Members(template));
+        Assert.NotEqual(category.Key, template.Key);
+        Assert.Equal(new[] { 3, 2 }, CategoryPacking.Spans(request,
+            Layout("direct-a", "direct-b", "nested-a", "nested-b")));
+        Assert.Equal(new[] { 3, 4 }, CategoryPacking.Spans(request,
+            Layout("direct-a", "nested-a", "direct-b", "nested-b")));
+    }
+
+    [Fact]
+    public void 模板分叉直接继承有效类别深度_单模板链不增加权重层()
+    {
+        PackRequest request = Grid(
+            Item("a-one", "Barter", "common", "a") with { TemplateId = "one" },
+            Item("a-two", "Barter", "common", "a") with { TemplateId = "two" },
+            Item("b-one", "Barter", "common", "b") with { TemplateId = "one" },
+            Item("b-again", "Barter", "common", "b") with { TemplateId = "one" });
+        PackingTree tree = PackingTree.For(request);
+
+        Assert.Equal(new[] { 0, 1, 2 }, tree.Paths["a-one"].Select(n => n.Depth));
+        Assert.Equal("one", tree.Paths["a-one"].Last().TemplateId);
+        Assert.Equal("b", tree.Paths["b-one"].Last().CategoryId);
+        Assert.Equal(new[] { 3, 2, 0 }, CategoryPacking.Spans(request,
+            Layout("a-one", "a-two", "b-one", "b-again")));
     }
 
     [Fact]
@@ -143,6 +188,6 @@ public sealed class PackingTreeTests
 
     private static string[] Signature(PackingTree tree) => tree.Paths
         .Select(pair => pair.Key + ":" + string.Join("/", pair.Value.Select(n =>
-            n.SortType + ":" + n.CategoryId + ":" + n.Depth + ":" + Members(n))))
+            n.SortType + ":" + n.CategoryId + ":" + n.TemplateId + ":" + n.Depth + ":" + Members(n))))
         .OrderBy(s => s).ToArray();
 }

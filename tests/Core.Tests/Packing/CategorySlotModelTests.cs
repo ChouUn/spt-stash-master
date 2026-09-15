@@ -8,10 +8,10 @@ namespace ChouUn.StashMaster.Core.Tests.Packing;
 public sealed class CategorySlotModelTests
 {
     [Fact]
-    public void 跨模板同类别可跨三行以上重分配_保持父层目标和原有占位()
+    public void 同子类可跨三行以上重分配_保持父层目标和原有占位()
     {
         PackItem[] items = Enumerable.Range(0, 16).Select(i =>
-            new PackItem("item-" + i, "template-" + i, 1, 1)
+            new PackItem("item-" + i, "template-" + i % 2, 1, 1)
             {
                 Required = true,
                 SortType = "Valuables",
@@ -104,7 +104,7 @@ public sealed class CategorySlotModelTests
     {
         int[] categories = { 0, 0, 1, 1, 2, 3 };
         PackItem[] items = categories.Select((category, i) =>
-            new PackItem("item-" + i, "template-" + i, i < 3 ? 2 : 1, 1)
+            new PackItem("item-" + i, "template-" + category, i < 3 ? 2 : 1, 1)
             {
                 Required = true,
                 SortType = "parent-" + category / 2,
@@ -158,8 +158,53 @@ public sealed class CategorySlotModelTests
         AssertPreserved(request, before, after);
     }
 
+    [Theory]
+    [InlineData(0)]
+    [InlineData(1)]
+    [InlineData(2)]
+    public void 同类别不同模板按行聚合_不能作为跨模板等价身份互换(int solver)
+    {
+        PackItem[] items = Enumerable.Range(0, 8).Select(i =>
+            new PackItem("item-" + i, "template-" + i % 2, 1, 1)
+            {
+                // 几何入口使用可选物品绕过占位预处理，守恒断言仍要求保留全部物品。
+                Required = solver != 1,
+                SortType = "Barter",
+                SubcategoryPath = new[] { "common", "leaf" },
+            }).ToArray();
+        var request = new PackRequest(2, 4, Array.Empty<FixedBlock>(), items)
+        {
+            Current = items.Select((item, i) =>
+                new Placement(item.Id, i % 2, i / 2, false)).ToArray(),
+        };
+        var before = new PackResult(request.Current, Array.Empty<PackItem>());
+        var baseline = new ContainerPackResult(new[] { before });
+
+        PackResult after;
+        if (solver == 2)
+        {
+            after = new CpSatPacker().Pack(request, 5);
+        }
+        else
+        {
+            PackResult? result = solver == 0
+                ? CategorySlotModel.Solve(new[] { request }, baseline, 5, out _).Grids[0]
+                : CategoryPackingModel.Solve(new[] { request }, baseline, 5, out _)?.Grids[0];
+            Assert.NotNull(result);
+            after = result!;
+        }
+
+        var templates = items.ToDictionary(item => item.Id, item => item.TemplateId);
+        Assert.All(after.Placements.GroupBy(p => p.Y), row =>
+            Assert.Single(row.Select(p => templates[p.Id]).Distinct()));
+        Assert.All(after.Placements.GroupBy(p => templates[p.Id]), group =>
+            Assert.Equal(1, group.Max(p => p.Y) - group.Min(p => p.Y)));
+        Assert.True(CategoryPacking.Compare(request, after, before) < 0);
+        AssertPreserved(request, before, after);
+    }
+
     private static PackItem Item(string id, string category, int width, int height) =>
-        new(id, id, width, height)
+        new(id, category, width, height)
         {
             Required = true,
             SortType = category,

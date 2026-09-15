@@ -34,3 +34,5 @@ SPT 一键整理仓库 mod 的项目文档。
   层级聚合里程碑的真实耗时、固定快照预算对照与优化方向
 - [reports/grid-budget-profile.md](reports/grid-budget-profile.md)：
   当前按网格计分实现的阶段耗时、搜索进展与缩短预算实验
+- [reports/template-grouping.md](reports/template-grouping.md)：
+  末端模板聚合修复、独立主题验证及既有存档回放的归因边界

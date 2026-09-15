@@ -18,7 +18,7 @@ public sealed class GlobalPackerTests
         PackRequest[] requests = Enumerable.Range(0, 2).Select(grid =>
             new PackRequest(1, 4, Array.Empty<FixedBlock>(),
                 Enumerable.Range(0, 4).Select(i => new PackItem(
-                    $"{grid}-{i}", i.ToString(), 1, 1)
+                    $"{grid}-{i}", "same", 1, 1)
                 {
                     Required = true,
                     SortType = "c" + i / 2,
@@ -123,7 +123,7 @@ public sealed class GlobalPackerTests
     [Fact]
     public void 单一类型容器参与整次排布时也应压紧()
     {
-        // 实际八行弹匣布局的匿名几何；保留跨模板等价组和输入次序。
+        // 实际八行弹匣布局的匿名几何；保留模板分组和输入次序。
         (int Template, int X, int Y)[] layout =
         {
             (0, 0, 0), (0, 1, 0), (0, 2, 0), (4, 2, 4), (4, 3, 4),

@@ -12,7 +12,7 @@ internal static class PackingSymmetry
         IEnumerable<(int Grid, CpSatModel.Rectangle Rect)> rectangles,
         ContainerPackResult baseline)
     {
-        // 几何等价由尺寸、树叶和网格资格决定，模板身份只留给结果回填。
+        // 几何等价由尺寸、模板叶节点和网格资格决定；实例身份留给结果回填。
         var groups = requests.SelectMany((request, grid) =>
         {
             PackingTree tree = PackingTree.For(request);

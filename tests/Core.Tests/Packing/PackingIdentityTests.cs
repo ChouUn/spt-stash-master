@@ -64,7 +64,7 @@ public sealed class PackingIdentityTests
     }
 
     [Fact]
-    public void 原位匹配包含转置且不会交换不同模板()
+    public void 原位匹配包含转置且保留同模板身份()
     {
         var request = Grid(2, 3,
             Item("a") with { Width = 3 }, Item("b") with { Width = 3 }) with
@@ -78,17 +78,6 @@ public sealed class PackingIdentityTests
         Assert.Equal(request.Current.OrderBy(p => p.Id),
             result.Placements.OrderBy(p => p.Id));
         CpSatPackerTests.AssertValid(request, result);
-
-        var distinct = Grid(2, 1, Item("a") with { TemplateId = "a" },
-            Item("b") with { TemplateId = "b" }) with
-        {
-            Current = new[]
-            {
-                new Placement("b", 0, 0, false), new Placement("a", 1, 0, false),
-            },
-        };
-        PackResult sorted = new CpSatPacker().Pack(distinct, 0);
-        Assert.Contains(new Placement("a", 0, 0, false), sorted.Placements);
     }
 
     [Fact]

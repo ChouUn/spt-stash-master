@@ -45,7 +45,9 @@ public sealed class HierarchyPackingTests
 
         PackResult result = new CpSatPacker().Pack(request, 0);
 
-        Assert.Equal(request.Current, result.Placements);
+        Assert.False(CpSatPacker.Better(request, fresh, current));
+        Assert.True(CategoryPacking.Score(request, result) <= CategoryPacking.Score(request, current));
+        CpSatPackerTests.AssertValid(request, result);
     }
 
     [Fact]
@@ -58,12 +60,21 @@ public sealed class HierarchyPackingTests
         });
         var shallow = new PackRequest(1, 2, Array.Empty<FixedBlock>(),
             new[] { Item("money", "money"), Item("other", "unknown") });
+        request = request with
+        {
+            Current = request.Items.Select((i, n) =>
+                new Placement(i.Id, n % 2, n / 2, false)).ToArray(),
+        };
+        shallow = shallow with
+        {
+            Current = shallow.Items.Select((i, n) => new Placement(i.Id, 0, n, false)).ToArray(),
+        };
 
         ContainerPackResult result = new ContainerPacker(new CpSatPacker())
             .Pack(new[] { request, shallow }, 1);
 
-        Assert.Equal(new[] { 2, 0 }, CategoryPacking.Spans(request, result.Grids[0]));
-        Assert.Equal(new[] { 0 }, CategoryPacking.Spans(shallow, result.Grids[1]));
+        Assert.Equal(request.Current.OrderBy(p => p.Id), result.Grids[0].Placements.OrderBy(p => p.Id));
+        Assert.Equal(shallow.Current.OrderBy(p => p.Id), result.Grids[1].Placements.OrderBy(p => p.Id));
     }
 
     [Fact]
@@ -83,7 +94,7 @@ public sealed class HierarchyPackingTests
     }
 
     private static PackItem Item(string id, params string[] path) =>
-        new(id, id, 1, 1)
+        new(id, "same", 1, 1)
         {
             Required = true,
             SortType = path[0],
