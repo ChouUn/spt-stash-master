@@ -59,6 +59,10 @@ internal static class CategoryOrder
             for (int level = 0; level < CategoryPacking.Depth(r); level++)
                 upper = upper * (CategoryPacking.UpperBound(r, level) + 1)
                     + CategoryPacking.UpperBound(r, level);
+            upper = upper * (CategoryPacking.CoordinateUpperBound(r, false) + 1)
+                + CategoryPacking.CoordinateUpperBound(r, false);
+            upper = upper * (CategoryPacking.CoordinateUpperBound(r, true) + 1)
+                + CategoryPacking.CoordinateUpperBound(r, true);
             return upper;
         }).Aggregate(BigInteger.Zero, (sum, value) => sum + value);
         return score * (qualityUpper + 1) + quality;

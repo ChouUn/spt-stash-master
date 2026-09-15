@@ -38,7 +38,7 @@ public sealed class CategoryPackingTests
     [InlineData(true, false)]
     [InlineData(false, true)]
     [InlineData(true, true)]
-    public void 混合尺寸全局最优与穷举的空间及层级目标一致(
+    public void 混合尺寸求解与穷举的空间层级及左上目标一致(
         bool hierarchy, bool equivalent)
     {
         PackItem[] items =
@@ -60,14 +60,19 @@ public sealed class CategoryPackingTests
         var request = new PackRequest(3, 3, Array.Empty<FixedBlock>(), items);
         var occupied = new bool[3, 3];
         var placed = new List<Placement>();
-        var optimum = (Height: int.MaxValue, Parent: int.MaxValue, Child: int.MaxValue);
+        var optimum = (Height: int.MaxValue, Parent: int.MaxValue, Child: int.MaxValue,
+            Rows: int.MaxValue, Columns: int.MaxValue);
         Search(0);
 
-        PackResult result = new CpSatPacker().Pack(request);
+        // 此用例验证最优目标与穷举一致，不把默认一秒预算当作最优证明。
+        PackResult result = new CpSatPacker().Pack(request, 5);
+        _output.WriteLine(result.Diagnostic);
 
         Assert.Equal(optimum, (CpSatPackerTests.Height(request, result),
             CategoryPacking.Span(request, result),
-            CategoryPacking.Span(request, result, 1)));
+            CategoryPacking.Span(request, result, 1),
+            (int)CategoryPacking.CoordinateSum(request, result, false),
+            (int)CategoryPacking.CoordinateSum(request, result, true)));
         CpSatPackerTests.AssertValid(request, result);
 
         void Search(int index)
@@ -77,7 +82,11 @@ public sealed class CategoryPackingTests
                 var candidate = new PackResult(placed, Array.Empty<PackItem>());
                 var score = (Height: CpSatPackerTests.Height(request, candidate),
                     Parent: CategoryPacking.Span(request, candidate),
-                    Child: CategoryPacking.Span(request, candidate, 1));
+                    Child: CategoryPacking.Span(request, candidate, 1),
+                    Rows: Enumerable.Range(0, 3).Sum(y => Enumerable.Range(0, 3)
+                        .Where(x => occupied[x, y]).Sum(_ => y)),
+                    Columns: Enumerable.Range(0, 3).Sum(x => Enumerable.Range(0, 3)
+                        .Where(y => occupied[x, y]).Sum(_ => x)));
                 if (score.CompareTo(optimum) < 0)
                 {
                     optimum = score;

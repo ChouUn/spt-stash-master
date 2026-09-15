@@ -313,7 +313,8 @@ public sealed class StackingTests
         {
             Tree = hasNextRule
                 ? CollectPlannerTests.Root(first,
-                    CollectPlannerTests.Box("second", "@o#2 弹药;"))
+                    CollectPlannerTests.Box("second", "@o#2 弹药;") with
+                    { Position = new GridPosition(2, 0, false) })
                 : CollectPlannerTests.Root(first),
         };
         // 模拟游戏按当前归属判断兼容，验证新移入堆叠会被后续补充命中。

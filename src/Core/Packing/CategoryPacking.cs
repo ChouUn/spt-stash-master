@@ -82,7 +82,9 @@ public static class CategoryPacking
             int difference = afterSpans[d] - beforeSpans[d];
             if (difference != 0) { return difference; }
         }
-        return 0;
+        int rows = CoordinateSum(request, next, false).CompareTo(CoordinateSum(request, before, false));
+        return rows != 0 ? rows
+            : CoordinateSum(request, next, true).CompareTo(CoordinateSum(request, before, true));
     }
 
     /// <summary>仅用本网格的类别上界确定倍率；任意精度避免深层类别溢出。</summary>
@@ -96,11 +98,61 @@ public static class CategoryPacking
         {
             score = score * (UpperBound(request, level) + 1) + spans[level];
         }
-        return score;
+        score = score * (CoordinateUpperBound(request, false) + 1)
+            + CoordinateSum(request, result, false);
+        return score * (CoordinateUpperBound(request, true) + 1)
+            + CoordinateSum(request, result, true);
     }
 
     internal static long UpperBound(PackRequest request, int level) =>
         (request.Height - 1L) * Level(request, level).Count;
+
+    /// <summary>可移动物品占用格子的坐标和；固定障碍贡献恒定，不计入目标。</summary>
+    internal static long CoordinateSum(PackRequest request, PackResult result, bool horizontal)
+    {
+        var items = request.Items.ToDictionary(i => i.Id);
+        long sum = 0;
+        foreach (Placement p in result.Placements)
+        {
+            PackItem item = items[p.Id];
+            int extent = horizontal ? (p.Rotated ? item.Height : item.Width)
+                : (p.Rotated ? item.Width : item.Height);
+            long area = (long)item.Width * item.Height;
+            sum += area * (horizontal ? p.X : p.Y) + area * (extent - 1) / 2;
+        }
+        return sum;
+    }
+
+    internal static long CoordinateUpperBound(PackRequest request, bool horizontal) =>
+        (long)request.Width * request.Height
+            * ((horizontal ? request.Width : request.Height) - 1) / 2;
+
+    /// <summary>忽略物品形状，优先占用坐标最小的可用格子，得到安全下界。</summary>
+    internal static long CoordinateLowerBound(PackRequest request, int area, bool horizontal)
+    {
+        int length = horizontal ? request.Width : request.Height;
+        int breadth = horizontal ? request.Height : request.Width;
+        long sum = 0;
+        for (int coordinate = 0; coordinate < length && area > 0; coordinate++)
+        {
+            int available = breadth;
+            foreach (FixedBlock block in request.Fixed)
+            {
+                int start = horizontal ? block.X : block.Y;
+                int extent = horizontal ? block.Width : block.Height;
+                if (coordinate >= start && coordinate < start + extent)
+                    available -= horizontal ? block.Height : block.Width;
+            }
+            int used = Math.Min(area, Math.Max(0, available));
+            sum += (long)used * coordinate;
+            area -= used;
+        }
+        return sum;
+    }
+
+    internal static bool CoordinatesAtBound(PackRequest request, PackResult result, int area) =>
+        CoordinateSum(request, result, false) == CoordinateLowerBound(request, area, false)
+        && CoordinateSum(request, result, true) == CoordinateLowerBound(request, area, true);
 
     /// <summary>
     /// 由必留面积和其他类别的最大供给量推导每类不可避免的面积。

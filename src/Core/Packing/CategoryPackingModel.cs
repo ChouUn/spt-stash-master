@@ -109,7 +109,7 @@ internal static class CategoryPackingModel
                 CategoryRangeModel.AddGeometry(model, request, tree.Nodes, rectangles, hints);
             CategoryOrderModel.Add(model, request, ranges);
             objectives.Add(GridObjectives(model, request, before, top, area,
-                tree, ranges, out string detail));
+                tree, ranges, rectangles, out string detail));
             details.Add($"grid={grid} {detail}");
         }
         foreach (var item in grids.SelectMany(g => g).GroupBy(r => r.Item.Id))
@@ -212,6 +212,7 @@ internal static class CategoryPackingModel
         PackRequest request, PackResult before, IntVar top, LinearExpr area,
         PackingTree tree,
         IReadOnlyDictionary<PackingTree.Node, CategoryRangeModel.Range> ranges,
+        IReadOnlyList<CpSatModel.Rectangle> rectangles,
         out string detail)
     {
         int areaBefore = CpSatPacker.Area(request, before);
@@ -253,6 +254,45 @@ internal static class CategoryPackingModel
             }
             objectives.Add(new PackingObjective(expression, upper, current,
                 label, fixedValue));
+            precedingFixed &= fixedValue;
+        }
+        AddCoordinates(false);
+        AddCoordinates(true);
+
+        void AddCoordinates(bool horizontal)
+        {
+            string label = horizontal ? "columns" : "rows";
+            long upper = CategoryPacking.CoordinateUpperBound(request, horizontal);
+            long current = CategoryPacking.CoordinateSum(request, before, horizontal);
+            var terms = new List<LinearExpr>();
+            foreach (CpSatModel.Rectangle rect in rectangles)
+            {
+                PackItem item = rect.Item;
+                long itemArea = (long)item.Width * item.Height;
+                int extent = horizontal ? item.Width : item.Height;
+                int rotatedExtent = horizontal ? item.Height : item.Width;
+                LinearExpr moment = itemArea * (horizontal ? rect.X : rect.Y)
+                    + itemArea * (extent - 1) / 2
+                    + rect.Rotated * (itemArea * (rotatedExtent - extent) / 2);
+                if (item.Required)
+                {
+                    terms.Add(moment);
+                }
+                else
+                {
+                    IntVar selected = model.NewIntVar(0, upper, label + "-selected");
+                    model.Add(selected == moment).OnlyEnforceIf(rect.Present);
+                    model.Add(selected == 0).OnlyEnforceIf(rect.Present.Not());
+                    terms.Add(selected);
+                }
+            }
+            LinearExpr expression = LinearExpr.Sum(terms);
+            long lower = CategoryPacking.CoordinateLowerBound(request, areaBefore, horizontal);
+            // 只有面积固定后才可以用该面积的坐标下界约束模型。
+            if (spaceOptimal || allRequired) { model.Add(expression >= lower); }
+            bool fixedValue = precedingFixed && current == lower;
+            if (fixedValue) { model.Add(expression == current); }
+            objectives.Add(new PackingObjective(expression, upper, current, label, fixedValue));
             precedingFixed &= fixedValue;
         }
         detail = "layers=" + tree.Levels.Count

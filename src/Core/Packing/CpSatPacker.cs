@@ -40,7 +40,8 @@ public sealed class CpSatPacker : IPacker
             && area == CategoryPacking.AreaUpperBound(request)
             && Enumerable.Range(0, CategoryPacking.Depth(request)).All(d =>
                 CategoryPacking.Span(request, baseline, d)
-                    == CategoryPacking.LowerBound(request, area, d));
+                    == CategoryPacking.LowerBound(request, area, d))
+            && CategoryPacking.CoordinatesAtBound(request, baseline, area);
         string? skip = maxSeconds <= 0 ? "budget-exhausted"
             : !categories && request.Items.All(i => i.Width == 1 && i.Height == 1)
                 ? "only-single-cells"
@@ -113,8 +114,9 @@ public sealed class CpSatPacker : IPacker
         PackResult filled = heuristic.Pack(rest);
         var preserved = new PackResult(
             request.Current.Concat(filled.Placements).ToArray(), filled.Unplaced);
-        // 相同面积和可移动高度时仍执行常规归拢、同模板排序。
-        return fresh.Unplaced.Any(i => i.Required) || Better(request, preserved, fresh)
+        // 完整评分相同时保留原布局，避免等价几何与身份反复换位。
+        return fresh.Unplaced.Any(i => i.Required)
+            || (!preserved.Unplaced.Any(i => i.Required) && !Better(request, fresh, preserved))
             ? preserved : fresh;
     }
 

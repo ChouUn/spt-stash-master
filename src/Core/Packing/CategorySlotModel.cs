@@ -95,6 +95,14 @@ internal static class CategorySlotModel
                     CategoryPacking.UpperBound(request, level),
                     CategoryPacking.Span(request, before, level), "category-" + level));
             }
+            // 固定占位的坐标贡献不变；仍保留跨网格完整计分所需的倍率。
+            foreach (bool horizontal in new[] { false, true })
+            {
+                long coordinate = CategoryPacking.CoordinateSum(request, before, horizontal);
+                goals.Add(new PackingObjective(LinearExpr.Constant(coordinate),
+                    CategoryPacking.CoordinateUpperBound(request, horizontal), coordinate,
+                    horizontal ? "columns" : "rows", true));
+            }
             CategoryOrderModel.Add(model, request, ranges);
             objectives.Add(goals);
         }

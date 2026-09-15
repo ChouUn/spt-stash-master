@@ -129,7 +129,8 @@ internal sealed class GlobalPacker
                 == Array.FindIndex(CpSatPacker.AvailableCells(request), a => a >= area)
             && Enumerable.Range(0, CategoryPacking.Depth(request)).All(d =>
                 CategoryPacking.Span(request, result, d)
-                    == CategoryPacking.LowerBound(request, area, d));
+                    == CategoryPacking.LowerBound(request, area, d))
+            && CategoryPacking.CoordinatesAtBound(request, result, area);
     }
 
     private static bool Better(IReadOnlyList<PackRequest> requests,

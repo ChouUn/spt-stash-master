@@ -36,3 +36,5 @@ SPT 一键整理仓库 mod 的项目文档。
   当前按网格计分实现的阶段耗时、搜索进展与缩短预算实验
 - [reports/template-grouping.md](reports/template-grouping.md)：
   末端模板聚合修复、独立主题验证及既有存档回放的归因边界
+- [reports/directional-packing.md](reports/directional-packing.md)：
+  聚合之后的行列方向目标、既有回放指标及验收边界
