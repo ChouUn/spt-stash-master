@@ -1,0 +1,3549 @@
+{
+  "SourceHashes": {
+    ".temp/seed-ablation-100/right-aligned-input.json": "2e18b78aeb30ff1dc7a7b6d2667f96281b75d4e209d2eb867582b571032b6511",
+    ".temp/seed-ablation-100/shuffled-corrected-input.json": "a6d2e0f2617cd542c837d6a5a919edae4237e344ed66e8b141eadda1b260b4e0",
+    ".temp/classification-repair/runtime-items.json": "703486fbe3559edb0a86090937719837128341c8aedd1ac28bc74b1c90beaab5"
+  },
+  "Stash": {
+    "Width": 10,
+    "Height": 72
+  },
+  "Containers": [
+    {
+      "Width": 5,
+      "Height": 10
+    },
+    {
+      "Width": 7,
+      "Height": 7
+    },
+    {
+      "Width": 10,
+      "Height": 10
+    },
+    {
+      "Width": 14,
+      "Height": 14
+    }
+  ],
+  "Templates": [
+    {
+      "TemplateId": "template-0000",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f724186f77447ed5636ad",
+        "5b5f731a86f774093e6cb4f9"
+      ]
+    },
+    {
+      "TemplateId": "template-0001",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f724186f77447ed5636ad",
+        "5b5f731a86f774093e6cb4f9"
+      ]
+    },
+    {
+      "TemplateId": "template-0002",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f724186f77447ed5636ad",
+        "5b5f724c86f774093f2ecf15"
+      ]
+    },
+    {
+      "TemplateId": "template-0003",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f724186f77447ed5636ad",
+        "5b5f731a86f774093e6cb4f9"
+      ]
+    },
+    {
+      "TemplateId": "template-0004",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Grenades",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0005",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Drink",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0006",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Money",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0007",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Melee",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0008",
+      "Width": 3,
+      "Height": 4,
+      "SortType": "Rigs",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0009",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Meds",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b337"
+      ]
+    },
+    {
+      "TemplateId": "template-0010",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Meds",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33a"
+      ]
+    },
+    {
+      "TemplateId": "template-0011",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "SpecialEquipment",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0012",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0013",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0014",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Eyewear",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0015",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f73ec86f774093e6cb4fd",
+        "5b5f742686f774093e6cb4ff"
+      ]
+    },
+    {
+      "TemplateId": "template-0016",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Magazines",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0017",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0018",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f736886f774094242f193",
+        "5b5f737886f774093e6cb4fb"
+      ]
+    },
+    {
+      "TemplateId": "template-0019",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Headsets",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0020",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f724186f77447ed5636ad",
+        "5b5f731a86f774093e6cb4f9"
+      ]
+    },
+    {
+      "TemplateId": "template-0021",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0022",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2ef"
+      ]
+    },
+    {
+      "TemplateId": "template-0023",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f2"
+      ]
+    },
+    {
+      "TemplateId": "template-0024",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f2"
+      ]
+    },
+    {
+      "TemplateId": "template-0025",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Money",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0026",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Money",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0027",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f736886f774094242f193",
+        "5b5f737886f774093e6cb4fb"
+      ]
+    },
+    {
+      "TemplateId": "template-0028",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0029",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0030",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f73ec86f774093e6cb4fd",
+        "5b5f742686f774093e6cb4ff"
+      ]
+    },
+    {
+      "TemplateId": "template-0031",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Grenades",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0032",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Facecovers",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0033",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f4"
+      ]
+    },
+    {
+      "TemplateId": "template-0034",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Food",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0035",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2ee"
+      ]
+    },
+    {
+      "TemplateId": "template-0036",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f2"
+      ]
+    },
+    {
+      "TemplateId": "template-0037",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2ee"
+      ]
+    },
+    {
+      "TemplateId": "template-0038",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2ee"
+      ]
+    },
+    {
+      "TemplateId": "template-0039",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2ef"
+      ]
+    },
+    {
+      "TemplateId": "template-0040",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Food",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0041",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Food",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0042",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Food",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0043",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Food",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0044",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Food",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0045",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Food",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0046",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Food",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0047",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Food",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0048",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Drink",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0049",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Drink",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0050",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Food",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0051",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Drink",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0052",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Meds",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b339"
+      ]
+    },
+    {
+      "TemplateId": "template-0053",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Meds",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b339"
+      ]
+    },
+    {
+      "TemplateId": "template-0054",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0055",
+      "Width": 4,
+      "Height": 2,
+      "SortType": "Weapons",
+      "SubcategoryPath": [
+        "5b5f78fc86f77409407a7f90"
+      ]
+    },
+    {
+      "TemplateId": "template-0056",
+      "Width": 1,
+      "Height": 3,
+      "SortType": "Melee",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0057",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f71de86f774093f2ecf13"
+      ]
+    },
+    {
+      "TemplateId": "template-0058",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f71de86f774093f2ecf13"
+      ]
+    },
+    {
+      "TemplateId": "template-0059",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f73ec86f774093e6cb4fd",
+        "5b5f742686f774093e6cb4ff"
+      ]
+    },
+    {
+      "TemplateId": "template-0060",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f73ec86f774093e6cb4fd",
+        "5b5f742686f774093e6cb4ff"
+      ]
+    },
+    {
+      "TemplateId": "template-0061",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f73ec86f774093e6cb4fd",
+        "5b5f744786f774094242f197"
+      ]
+    },
+    {
+      "TemplateId": "template-0062",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f73ec86f774093e6cb4fd",
+        "5b5f744786f774094242f197"
+      ]
+    },
+    {
+      "TemplateId": "template-0063",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Grenades",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0064",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0065",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0066",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2ed"
+      ]
+    },
+    {
+      "TemplateId": "template-0067",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2ef"
+      ]
+    },
+    {
+      "TemplateId": "template-0068",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2ef"
+      ]
+    },
+    {
+      "TemplateId": "template-0069",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f6"
+      ]
+    },
+    {
+      "TemplateId": "template-0070",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f6"
+      ]
+    },
+    {
+      "TemplateId": "template-0071",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Info",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0072",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f2"
+      ]
+    },
+    {
+      "TemplateId": "template-0073",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f2"
+      ]
+    },
+    {
+      "TemplateId": "template-0074",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Food",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0075",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Info",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0076",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Info",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0077",
+      "Width": 2,
+      "Height": 2,
+      "SortType": "Meds",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b338"
+      ]
+    },
+    {
+      "TemplateId": "template-0078",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Meds",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b338"
+      ]
+    },
+    {
+      "TemplateId": "template-0079",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Meds",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b337"
+      ]
+    },
+    {
+      "TemplateId": "template-0080",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Keys",
+      "SubcategoryPath": [
+        "5c518ec986f7743b68682ce2"
+      ]
+    },
+    {
+      "TemplateId": "template-0081",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f73ec86f774093e6cb4fd",
+        "5b5f742686f774093e6cb4ff"
+      ]
+    },
+    {
+      "TemplateId": "template-0082",
+      "Width": 3,
+      "Height": 1,
+      "SortType": "Weapons",
+      "SubcategoryPath": [
+        "5b5f796a86f774093f2ed3c0"
+      ]
+    },
+    {
+      "TemplateId": "template-0083",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Magazines",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0084",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0085",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Food",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0086",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f0"
+      ]
+    },
+    {
+      "TemplateId": "template-0087",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2ee"
+      ]
+    },
+    {
+      "TemplateId": "template-0088",
+      "Width": 1,
+      "Height": 3,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f1"
+      ]
+    },
+    {
+      "TemplateId": "template-0089",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2ee"
+      ]
+    },
+    {
+      "TemplateId": "template-0090",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0091",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0092",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f4"
+      ]
+    },
+    {
+      "TemplateId": "template-0093",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f4"
+      ]
+    },
+    {
+      "TemplateId": "template-0094",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f73ec86f774093e6cb4fd",
+        "5b5f742686f774093e6cb4ff"
+      ]
+    },
+    {
+      "TemplateId": "template-0095",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f1"
+      ]
+    },
+    {
+      "TemplateId": "template-0096",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f0"
+      ]
+    },
+    {
+      "TemplateId": "template-0097",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f1"
+      ]
+    },
+    {
+      "TemplateId": "template-0098",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f750686f774093e6cb503",
+        "5b5f757486f774093e6cb507"
+      ]
+    },
+    {
+      "TemplateId": "template-0099",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f73ec86f774093e6cb4fd",
+        "5b5f744786f774094242f197"
+      ]
+    },
+    {
+      "TemplateId": "template-0100",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f724186f77447ed5636ad",
+        "5b5f731a86f774093e6cb4f9"
+      ]
+    },
+    {
+      "TemplateId": "template-0101",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Magazines",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0102",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f736886f774094242f193",
+        "5b5f737886f774093e6cb4fb"
+      ]
+    },
+    {
+      "TemplateId": "template-0103",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0104",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0105",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Magazines",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0106",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Headgear",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0107",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Headsets",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0108",
+      "Width": 2,
+      "Height": 2,
+      "SortType": "Headgear",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0109",
+      "Width": 2,
+      "Height": 2,
+      "SortType": "Headgear",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0110",
+      "Width": 1,
+      "Height": 3,
+      "SortType": "Rigs",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0111",
+      "Width": 3,
+      "Height": 3,
+      "SortType": "Armor",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0112",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Facecovers",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0113",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Magazines",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0114",
+      "Width": 3,
+      "Height": 2,
+      "SortType": "Weapons",
+      "SubcategoryPath": [
+        "5b5f78fc86f77409407a7f90"
+      ]
+    },
+    {
+      "TemplateId": "template-0115",
+      "Width": 2,
+      "Height": 2,
+      "SortType": "Headgear",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0116",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Keys",
+      "SubcategoryPath": [
+        "5c518ec986f7743b68682ce2"
+      ]
+    },
+    {
+      "TemplateId": "template-0117",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Keys",
+      "SubcategoryPath": [
+        "5c518ec986f7743b68682ce2"
+      ]
+    },
+    {
+      "TemplateId": "template-0118",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Meds",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b339"
+      ]
+    },
+    {
+      "TemplateId": "template-0119",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f6"
+      ]
+    },
+    {
+      "TemplateId": "template-0120",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f3"
+      ]
+    },
+    {
+      "TemplateId": "template-0121",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Meds",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b337"
+      ]
+    },
+    {
+      "TemplateId": "template-0122",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2ed"
+      ]
+    },
+    {
+      "TemplateId": "template-0123",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f73ec86f774093e6cb4fd",
+        "5b5f744786f774094242f197"
+      ]
+    },
+    {
+      "TemplateId": "template-0124",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f73ec86f774093e6cb4fd",
+        "5b5f748386f774093e6cb501"
+      ]
+    },
+    {
+      "TemplateId": "template-0125",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f73ec86f774093e6cb4fd",
+        "5b5f748386f774093e6cb501"
+      ]
+    },
+    {
+      "TemplateId": "template-0126",
+      "Width": 2,
+      "Height": 2,
+      "SortType": "Headgear",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0127",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Facecovers",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0128",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f2"
+      ]
+    },
+    {
+      "TemplateId": "template-0129",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "SpecialEquipment",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0130",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0131",
+      "Width": 3,
+      "Height": 1,
+      "SortType": "Weapons",
+      "SubcategoryPath": [
+        "5b5f796a86f774093f2ed3c0"
+      ]
+    },
+    {
+      "TemplateId": "template-0132",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0133",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0134",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Food",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0135",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f0"
+      ]
+    },
+    {
+      "TemplateId": "template-0136",
+      "Width": 2,
+      "Height": 2,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f1"
+      ]
+    },
+    {
+      "TemplateId": "template-0137",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f4"
+      ]
+    },
+    {
+      "TemplateId": "template-0138",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Melee",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0139",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Food",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0140",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f1"
+      ]
+    },
+    {
+      "TemplateId": "template-0141",
+      "Width": 6,
+      "Height": 1,
+      "SortType": "Weapons",
+      "SubcategoryPath": [
+        "5b5f798886f77447ed5636b5"
+      ]
+    },
+    {
+      "TemplateId": "template-0142",
+      "Width": 5,
+      "Height": 1,
+      "SortType": "Weapons",
+      "SubcategoryPath": [
+        "5b5f798886f77447ed5636b5"
+      ]
+    },
+    {
+      "TemplateId": "template-0143",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Magazines",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0144",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f73ec86f774093e6cb4fd",
+        "5b5f742686f774093e6cb4ff"
+      ]
+    },
+    {
+      "TemplateId": "template-0145",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2ef"
+      ]
+    },
+    {
+      "TemplateId": "template-0146",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f73ec86f774093e6cb4fd",
+        "5b5f742686f774093e6cb4ff"
+      ]
+    },
+    {
+      "TemplateId": "template-0147",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0148",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Meds",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33a"
+      ]
+    },
+    {
+      "TemplateId": "template-0149",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Meds",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33a"
+      ]
+    },
+    {
+      "TemplateId": "template-0150",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Meds",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33a"
+      ]
+    },
+    {
+      "TemplateId": "template-0151",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Meds",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33a"
+      ]
+    },
+    {
+      "TemplateId": "template-0152",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Meds",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33a"
+      ]
+    },
+    {
+      "TemplateId": "template-0153",
+      "Width": 3,
+      "Height": 3,
+      "SortType": "Armor",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0154",
+      "Width": 3,
+      "Height": 3,
+      "SortType": "Armor",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0155",
+      "Width": 2,
+      "Height": 3,
+      "SortType": "Backpacks",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0156",
+      "Width": 2,
+      "Height": 2,
+      "SortType": "Headgear",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0157",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Rigs",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0158",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Drink",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0159",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2ef"
+      ]
+    },
+    {
+      "TemplateId": "template-0160",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f1"
+      ]
+    },
+    {
+      "TemplateId": "template-0161",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f4"
+      ]
+    },
+    {
+      "TemplateId": "template-0162",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f0"
+      ]
+    },
+    {
+      "TemplateId": "template-0163",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Headsets",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0164",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f75b986f77447ec5d7710",
+        "5b5f75e486f77447ec5d7712"
+      ]
+    },
+    {
+      "TemplateId": "template-0165",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f71de86f774093f2ecf13"
+      ]
+    },
+    {
+      "TemplateId": "template-0166",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f71de86f774093f2ecf13"
+      ]
+    },
+    {
+      "TemplateId": "template-0167",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f71de86f774093f2ecf13"
+      ]
+    },
+    {
+      "TemplateId": "template-0168",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Keys",
+      "SubcategoryPath": [
+        "5c518ed586f774119a772aee"
+      ]
+    },
+    {
+      "TemplateId": "template-0169",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Keys",
+      "SubcategoryPath": [
+        "5c518ec986f7743b68682ce2"
+      ]
+    },
+    {
+      "TemplateId": "template-0170",
+      "Width": 4,
+      "Height": 2,
+      "SortType": "Weapons",
+      "SubcategoryPath": [
+        "5b5f78fc86f77409407a7f90"
+      ]
+    },
+    {
+      "TemplateId": "template-0171",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f736886f774094242f193",
+        "5b5f737886f774093e6cb4fb"
+      ]
+    },
+    {
+      "TemplateId": "template-0172",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Magazines",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0173",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f724186f77447ed5636ad",
+        "5b5f72f786f77447ec5d7702"
+      ]
+    },
+    {
+      "TemplateId": "template-0174",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f724186f77447ed5636ad",
+        "5b5f724c86f774093f2ecf15"
+      ]
+    },
+    {
+      "TemplateId": "template-0175",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f750686f774093e6cb503",
+        "5b5f755f86f77447ec5d770e"
+      ]
+    },
+    {
+      "TemplateId": "template-0176",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f724186f77447ed5636ad",
+        "5b5f724c86f774093f2ecf15"
+      ]
+    },
+    {
+      "TemplateId": "template-0177",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Backpacks",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0178",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Weapons",
+      "SubcategoryPath": [
+        "5b5f792486f77447ed5636b3"
+      ]
+    },
+    {
+      "TemplateId": "template-0179",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0180",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f724186f77447ed5636ad",
+        "5b5f731a86f774093e6cb4f9"
+      ]
+    },
+    {
+      "TemplateId": "template-0181",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0182",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f724186f77447ed5636ad",
+        "5b5f724c86f774093f2ecf15"
+      ]
+    },
+    {
+      "TemplateId": "template-0183",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f75b986f77447ec5d7710",
+        "5b5f761f86f774094242f1a1"
+      ]
+    },
+    {
+      "TemplateId": "template-0184",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Magazines",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0185",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Meds",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b339"
+      ]
+    },
+    {
+      "TemplateId": "template-0186",
+      "Width": 3,
+      "Height": 1,
+      "SortType": "Meds",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b339"
+      ]
+    },
+    {
+      "TemplateId": "template-0187",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2ef"
+      ]
+    },
+    {
+      "TemplateId": "template-0188",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2ef"
+      ]
+    },
+    {
+      "TemplateId": "template-0189",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f6"
+      ]
+    },
+    {
+      "TemplateId": "template-0190",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2ee"
+      ]
+    },
+    {
+      "TemplateId": "template-0191",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2ee"
+      ]
+    },
+    {
+      "TemplateId": "template-0192",
+      "Width": 2,
+      "Height": 3,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f2"
+      ]
+    },
+    {
+      "TemplateId": "template-0193",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f4"
+      ]
+    },
+    {
+      "TemplateId": "template-0194",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2ef"
+      ]
+    },
+    {
+      "TemplateId": "template-0195",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2ee"
+      ]
+    },
+    {
+      "TemplateId": "template-0196",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f3"
+      ]
+    },
+    {
+      "TemplateId": "template-0197",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f3"
+      ]
+    },
+    {
+      "TemplateId": "template-0198",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2ef"
+      ]
+    },
+    {
+      "TemplateId": "template-0199",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Money",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0200",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f73ec86f774093e6cb4fd",
+        "5b5f740a86f77447ec5d7706"
+      ]
+    },
+    {
+      "TemplateId": "template-0201",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Drink",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0202",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Drink",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0203",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f6"
+      ]
+    },
+    {
+      "TemplateId": "template-0204",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Rigs",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0205",
+      "Width": 2,
+      "Height": 2,
+      "SortType": "Headgear",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0206",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0207",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f2"
+      ]
+    },
+    {
+      "TemplateId": "template-0208",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Keys",
+      "SubcategoryPath": [
+        "5c518ec986f7743b68682ce2"
+      ]
+    },
+    {
+      "TemplateId": "template-0209",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Keys",
+      "SubcategoryPath": [
+        "5c518ec986f7743b68682ce2"
+      ]
+    },
+    {
+      "TemplateId": "template-0210",
+      "Width": 2,
+      "Height": 4,
+      "SortType": "Backpacks",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0211",
+      "Width": 6,
+      "Height": 2,
+      "SortType": "Weapons",
+      "SubcategoryPath": [
+        "5b5f791486f774093f2ed3be"
+      ]
+    },
+    {
+      "TemplateId": "template-0212",
+      "Width": 2,
+      "Height": 2,
+      "SortType": "Headgear",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0213",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0214",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0215",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2ee"
+      ]
+    },
+    {
+      "TemplateId": "template-0216",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f2"
+      ]
+    },
+    {
+      "TemplateId": "template-0217",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f4"
+      ]
+    },
+    {
+      "TemplateId": "template-0218",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f4"
+      ]
+    },
+    {
+      "TemplateId": "template-0219",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f4"
+      ]
+    },
+    {
+      "TemplateId": "template-0220",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f4"
+      ]
+    },
+    {
+      "TemplateId": "template-0221",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Grenades",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0222",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Grenades",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0223",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Headsets",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0224",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f4"
+      ]
+    },
+    {
+      "TemplateId": "template-0225",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Facecovers",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0226",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f750686f774093e6cb503",
+        "5b5f755f86f77447ec5d770e"
+      ]
+    },
+    {
+      "TemplateId": "template-0227",
+      "Width": 2,
+      "Height": 2,
+      "SortType": "Weapons",
+      "SubcategoryPath": [
+        "5b5f79d186f774093f2ed3c2"
+      ]
+    },
+    {
+      "TemplateId": "template-0228",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Meds",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b339"
+      ]
+    },
+    {
+      "TemplateId": "template-0229",
+      "Width": 5,
+      "Height": 1,
+      "SortType": "Weapons",
+      "SubcategoryPath": [
+        "5b5f794b86f77409407a7f92"
+      ]
+    },
+    {
+      "TemplateId": "template-0230",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Drink",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0231",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Rigs",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0232",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Backpacks",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0233",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Meds",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33a"
+      ]
+    },
+    {
+      "TemplateId": "template-0234",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Meds",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33a"
+      ]
+    },
+    {
+      "TemplateId": "template-0235",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Meds",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33a"
+      ]
+    },
+    {
+      "TemplateId": "template-0236",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0237",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0238",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0239",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0240",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0241",
+      "Width": 4,
+      "Height": 2,
+      "SortType": "Weapons",
+      "SubcategoryPath": [
+        "5b5f78e986f77447ed5636b1"
+      ]
+    },
+    {
+      "TemplateId": "template-0242",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "SpecialEquipment",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0243",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Rigs",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0244",
+      "Width": 2,
+      "Height": 2,
+      "SortType": "Headgear",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0245",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f724186f77447ed5636ad",
+        "5b5f724c86f774093f2ecf15"
+      ]
+    },
+    {
+      "TemplateId": "template-0246",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f71de86f774093f2ecf13"
+      ]
+    },
+    {
+      "TemplateId": "template-0247",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f1"
+      ]
+    },
+    {
+      "TemplateId": "template-0248",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0249",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0250",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f724186f77447ed5636ad",
+        "5b5f72f786f77447ec5d7702"
+      ]
+    },
+    {
+      "TemplateId": "template-0251",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f724186f77447ed5636ad",
+        "5b5f731a86f774093e6cb4f9"
+      ]
+    },
+    {
+      "TemplateId": "template-0252",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f71de86f774093f2ecf13"
+      ]
+    },
+    {
+      "TemplateId": "template-0253",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0254",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Facecovers",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0255",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Meds",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b338"
+      ]
+    },
+    {
+      "TemplateId": "template-0256",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Drink",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0257",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0258",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Headsets",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0259",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Rigs",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0260",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f6"
+      ]
+    },
+    {
+      "TemplateId": "template-0261",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f2"
+      ]
+    },
+    {
+      "TemplateId": "template-0262",
+      "Width": 3,
+      "Height": 1,
+      "SortType": "Rigs",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0263",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f73ec86f774093e6cb4fd",
+        "5b5f742686f774093e6cb4ff"
+      ]
+    },
+    {
+      "TemplateId": "template-0264",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Rigs",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0265",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Rigs",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0266",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Containers",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0267",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Drink",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0268",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f736886f774094242f193",
+        "5b5f737886f774093e6cb4fb"
+      ]
+    },
+    {
+      "TemplateId": "template-0269",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f73ec86f774093e6cb4fd",
+        "5b5f742686f774093e6cb4ff"
+      ]
+    },
+    {
+      "TemplateId": "template-0270",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f73ec86f774093e6cb4fd",
+        "5b5f748386f774093e6cb501"
+      ]
+    },
+    {
+      "TemplateId": "template-0271",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Grenades",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0272",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Grenades",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0273",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f73ec86f774093e6cb4fd",
+        "5b5f748386f774093e6cb501"
+      ]
+    },
+    {
+      "TemplateId": "template-0274",
+      "Width": 2,
+      "Height": 2,
+      "SortType": "Backpacks",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0275",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0276",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0277",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0278",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Armband",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0279",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2ee"
+      ]
+    },
+    {
+      "TemplateId": "template-0280",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f6"
+      ]
+    },
+    {
+      "TemplateId": "template-0281",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f6"
+      ]
+    },
+    {
+      "TemplateId": "template-0282",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f724186f77447ed5636ad",
+        "5b5f731a86f774093e6cb4f9"
+      ]
+    },
+    {
+      "TemplateId": "template-0283",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f736886f774094242f193",
+        "5b5f73ab86f774094242f195"
+      ]
+    },
+    {
+      "TemplateId": "template-0284",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f736886f774094242f193",
+        "5b5f737886f774093e6cb4fb"
+      ]
+    },
+    {
+      "TemplateId": "template-0285",
+      "Width": 6,
+      "Height": 2,
+      "SortType": "Weapons",
+      "SubcategoryPath": [
+        "5b5f798886f77447ed5636b5"
+      ]
+    },
+    {
+      "TemplateId": "template-0286",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f724186f77447ed5636ad",
+        "5b5f731a86f774093e6cb4f9"
+      ]
+    },
+    {
+      "TemplateId": "template-0287",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f73ec86f774093e6cb4fd",
+        "5b5f742686f774093e6cb4ff"
+      ]
+    },
+    {
+      "TemplateId": "template-0288",
+      "Width": 4,
+      "Height": 3,
+      "SortType": "Rigs",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0289",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Rigs",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0290",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Headgear",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0291",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Headsets",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0292",
+      "Width": 2,
+      "Height": 2,
+      "SortType": "Facecovers",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0293",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f1"
+      ]
+    },
+    {
+      "TemplateId": "template-0294",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f1"
+      ]
+    },
+    {
+      "TemplateId": "template-0295",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Containers",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0296",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f0"
+      ]
+    },
+    {
+      "TemplateId": "template-0297",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f3"
+      ]
+    },
+    {
+      "TemplateId": "template-0298",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f6"
+      ]
+    },
+    {
+      "TemplateId": "template-0299",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Info",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0300",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Facecovers",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0301",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Magazines",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0302",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Food",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0303",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Meds",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33a"
+      ]
+    },
+    {
+      "TemplateId": "template-0304",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Meds",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33a"
+      ]
+    },
+    {
+      "TemplateId": "template-0305",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2ef"
+      ]
+    },
+    {
+      "TemplateId": "template-0306",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Info",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0307",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Keys",
+      "SubcategoryPath": [
+        "5c518ec986f7743b68682ce2"
+      ]
+    },
+    {
+      "TemplateId": "template-0308",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f75b986f77447ec5d7710",
+        "5b5f761f86f774094242f1a1"
+      ]
+    },
+    {
+      "TemplateId": "template-0309",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f736886f774094242f193",
+        "5b5f737886f774093e6cb4fb"
+      ]
+    },
+    {
+      "TemplateId": "template-0310",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f73ec86f774093e6cb4fd",
+        "5b5f742686f774093e6cb4ff"
+      ]
+    },
+    {
+      "TemplateId": "template-0311",
+      "Width": 3,
+      "Height": 3,
+      "SortType": "Rigs",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0312",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "BallisticPlates",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0313",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0314",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0315",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0316",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0317",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0318",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Keys",
+      "SubcategoryPath": [
+        "5c518ec986f7743b68682ce2"
+      ]
+    },
+    {
+      "TemplateId": "template-0319",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f71de86f774093f2ecf13"
+      ]
+    },
+    {
+      "TemplateId": "template-0320",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f724186f77447ed5636ad",
+        "5b5f731a86f774093e6cb4f9"
+      ]
+    },
+    {
+      "TemplateId": "template-0321",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0322",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0323",
+      "Width": 2,
+      "Height": 2,
+      "SortType": "BallisticPlates",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0324",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "BallisticPlates",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0325",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f1"
+      ]
+    },
+    {
+      "TemplateId": "template-0326",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f71de86f774093f2ecf13"
+      ]
+    },
+    {
+      "TemplateId": "template-0327",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f73ec86f774093e6cb4fd",
+        "5b5f742686f774093e6cb4ff"
+      ]
+    },
+    {
+      "TemplateId": "template-0328",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f73ec86f774093e6cb4fd",
+        "5b5f748386f774093e6cb501"
+      ]
+    },
+    {
+      "TemplateId": "template-0329",
+      "Width": 2,
+      "Height": 3,
+      "SortType": "Backpacks",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0330",
+      "Width": 2,
+      "Height": 3,
+      "SortType": "BallisticPlates",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0331",
+      "Width": 2,
+      "Height": 3,
+      "SortType": "BallisticPlates",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0332",
+      "Width": 2,
+      "Height": 2,
+      "SortType": "BallisticPlates",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0333",
+      "Width": 2,
+      "Height": 2,
+      "SortType": "BallisticPlates",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0334",
+      "Width": 2,
+      "Height": 2,
+      "SortType": "BallisticPlates",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0335",
+      "Width": 2,
+      "Height": 2,
+      "SortType": "Facecovers",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0336",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Food",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0337",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Keys",
+      "SubcategoryPath": [
+        "5c518ec986f7743b68682ce2"
+      ]
+    },
+    {
+      "TemplateId": "template-0338",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Keys",
+      "SubcategoryPath": [
+        "5c518ec986f7743b68682ce2"
+      ]
+    },
+    {
+      "TemplateId": "template-0339",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Melee",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0340",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "SpecialEquipment",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0341",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Armband",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0342",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Meds",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33a"
+      ]
+    },
+    {
+      "TemplateId": "template-0343",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f1"
+      ]
+    },
+    {
+      "TemplateId": "template-0344",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f71de86f774093f2ecf13"
+      ]
+    },
+    {
+      "TemplateId": "template-0345",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f4"
+      ]
+    },
+    {
+      "TemplateId": "template-0346",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f4"
+      ]
+    },
+    {
+      "TemplateId": "template-0347",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f4"
+      ]
+    },
+    {
+      "TemplateId": "template-0348",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f4"
+      ]
+    },
+    {
+      "TemplateId": "template-0349",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Backpacks",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0350",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f1"
+      ]
+    },
+    {
+      "TemplateId": "template-0351",
+      "Width": 2,
+      "Height": 2,
+      "SortType": "Headgear",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0352",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Headsets",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0353",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Headsets",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0354",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Headsets",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0355",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f724186f77447ed5636ad",
+        "5b5f731a86f774093e6cb4f9"
+      ]
+    },
+    {
+      "TemplateId": "template-0356",
+      "Width": 2,
+      "Height": 4,
+      "SortType": "Backpacks",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0357",
+      "Width": 2,
+      "Height": 2,
+      "SortType": "Headgear",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0358",
+      "Width": 2,
+      "Height": 2,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f4"
+      ]
+    },
+    {
+      "TemplateId": "template-0359",
+      "Width": 2,
+      "Height": 2,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f4"
+      ]
+    },
+    {
+      "TemplateId": "template-0360",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f4"
+      ]
+    },
+    {
+      "TemplateId": "template-0361",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Armband",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0362",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Magazines",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0363",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f750686f774093e6cb503",
+        "5b5f757486f774093e6cb507"
+      ]
+    },
+    {
+      "TemplateId": "template-0364",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f4"
+      ]
+    },
+    {
+      "TemplateId": "template-0365",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Ammo",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b33b"
+      ]
+    },
+    {
+      "TemplateId": "template-0366",
+      "Width": 1,
+      "Height": 3,
+      "SortType": "Rigs",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0367",
+      "Width": 3,
+      "Height": 4,
+      "SortType": "Rigs",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0368",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f724186f77447ed5636ad",
+        "5b5f724c86f774093f2ecf15"
+      ]
+    },
+    {
+      "TemplateId": "template-0369",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Info",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0370",
+      "Width": 5,
+      "Height": 2,
+      "SortType": "Weapons",
+      "SubcategoryPath": [
+        "5b5f78fc86f77409407a7f90"
+      ]
+    },
+    {
+      "TemplateId": "template-0371",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f724186f77447ed5636ad",
+        "5b5f731a86f774093e6cb4f9"
+      ]
+    },
+    {
+      "TemplateId": "template-0372",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f4"
+      ]
+    },
+    {
+      "TemplateId": "template-0373",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f4"
+      ]
+    },
+    {
+      "TemplateId": "template-0374",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f4"
+      ]
+    },
+    {
+      "TemplateId": "template-0375",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f4"
+      ]
+    },
+    {
+      "TemplateId": "template-0376",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f4"
+      ]
+    },
+    {
+      "TemplateId": "template-0377",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f4"
+      ]
+    },
+    {
+      "TemplateId": "template-0378",
+      "Width": 5,
+      "Height": 2,
+      "SortType": "Weapons",
+      "SubcategoryPath": [
+        "5b5f78e986f77447ed5636b1"
+      ]
+    },
+    {
+      "TemplateId": "template-0379",
+      "Width": 2,
+      "Height": 2,
+      "SortType": "Weapons",
+      "SubcategoryPath": [
+        "5b5f796a86f774093f2ed3c0"
+      ]
+    },
+    {
+      "TemplateId": "template-0380",
+      "Width": 2,
+      "Height": 2,
+      "SortType": "Weapons",
+      "SubcategoryPath": [
+        "5b5f796a86f774093f2ed3c0"
+      ]
+    },
+    {
+      "TemplateId": "template-0381",
+      "Width": 4,
+      "Height": 1,
+      "SortType": "Weapons",
+      "SubcategoryPath": [
+        "5b5f798886f77447ed5636b5"
+      ]
+    },
+    {
+      "TemplateId": "template-0382",
+      "Width": 3,
+      "Height": 1,
+      "SortType": "Weapons",
+      "SubcategoryPath": [
+        "5b5f794b86f77409407a7f92"
+      ]
+    },
+    {
+      "TemplateId": "template-0383",
+      "Width": 2,
+      "Height": 2,
+      "SortType": "Weapons",
+      "SubcategoryPath": [
+        "5b5f792486f77447ed5636b3"
+      ]
+    },
+    {
+      "TemplateId": "template-0384",
+      "Width": 1,
+      "Height": 2,
+      "SortType": "Drink",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0385",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f750686f774093e6cb503",
+        "5b5f757486f774093e6cb507"
+      ]
+    },
+    {
+      "TemplateId": "template-0386",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f750686f774093e6cb503",
+        "5b5f757486f774093e6cb507"
+      ]
+    },
+    {
+      "TemplateId": "template-0387",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f750686f774093e6cb503",
+        "5b5f757486f774093e6cb507"
+      ]
+    },
+    {
+      "TemplateId": "template-0388",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f750686f774093e6cb503",
+        "5b5f757486f774093e6cb507"
+      ]
+    },
+    {
+      "TemplateId": "template-0389",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f750686f774093e6cb503",
+        "5b5f757486f774093e6cb507"
+      ]
+    },
+    {
+      "TemplateId": "template-0390",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f750686f774093e6cb503",
+        "5b5f757486f774093e6cb507"
+      ]
+    },
+    {
+      "TemplateId": "template-0391",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f73ec86f774093e6cb4fd",
+        "5b5f748386f774093e6cb501"
+      ]
+    },
+    {
+      "TemplateId": "template-0392",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f750686f774093e6cb503",
+        "5b5f757486f774093e6cb507"
+      ]
+    },
+    {
+      "TemplateId": "template-0393",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f750686f774093e6cb503",
+        "5b5f757486f774093e6cb507"
+      ]
+    },
+    {
+      "TemplateId": "template-0394",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f750686f774093e6cb503",
+        "5b5f757486f774093e6cb507"
+      ]
+    },
+    {
+      "TemplateId": "template-0395",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Info",
+      "SubcategoryPath": []
+    },
+    {
+      "TemplateId": "template-0396",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Barter",
+      "SubcategoryPath": [
+        "5b47574386f77428ca22b2f4"
+      ]
+    },
+    {
+      "TemplateId": "template-0397",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f724186f77447ed5636ad",
+        "5b5f731a86f774093e6cb4f9"
+      ]
+    },
+    {
+      "TemplateId": "template-0398",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f724186f77447ed5636ad",
+        "5b5f731a86f774093e6cb4f9"
+      ]
+    },
+    {
+      "TemplateId": "template-0399",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f724186f77447ed5636ad",
+        "5b5f731a86f774093e6cb4f9"
+      ]
+    },
+    {
+      "TemplateId": "template-0400",
+      "Width": 2,
+      "Height": 1,
+      "SortType": "Mods",
+      "SubcategoryPath": [
+        "5b5f71b386f774093f2ecf11",
+        "5b5f724186f77447ed5636ad",
+        "5b5f731a86f774093e6cb4f9"
+      ]
+    }
+  ],
+  "ContainerTemplates": [
+    {
+      "TemplateId": "container-0",
+      "Width": 5,
+      "Height": 2,
+      "SortType": "Containers",
+      "SubcategoryPath": [],
+      "GridWidth": 5,
+      "GridHeight": 10
+    },
+    {
+      "TemplateId": "container-1",
+      "Width": 3,
+      "Height": 3,
+      "SortType": "Containers",
+      "SubcategoryPath": [],
+      "GridWidth": 7,
+      "GridHeight": 7
+    },
+    {
+      "TemplateId": "container-2",
+      "Width": 1,
+      "Height": 1,
+      "SortType": "Containers",
+      "SubcategoryPath": [],
+      "GridWidth": 10,
+      "GridHeight": 10
+    },
+    {
+      "TemplateId": "container-3",
+      "Width": 4,
+      "Height": 4,
+      "SortType": "Containers",
+      "SubcategoryPath": [],
+      "GridWidth": 14,
+      "GridHeight": 14
+    }
+  ],
+  "Notes": "Synthetic final-packing catalog derived from frozen observed dimensions/classification; template IDs anonymized. For templates with dimensional variants, most frequent observed form is selected. Container acceptance filters and live transactions are not modeled."
+}
